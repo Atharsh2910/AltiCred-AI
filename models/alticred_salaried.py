@@ -39,7 +39,7 @@ class AltiCredScorer:
     An integrated scoring model that combines four different credit risk models
     using meta-stacking to produce a single, comprehensive AltiCred Score for Salaried Employees.
     """
-    def __init__(self, file_path='salaried_dataset.csv'):
+    def __init__(self, file_path='data/salaried_dataset.csv'):
         self.file_path = file_path
         self.df = self._load_and_clean_data()
         
