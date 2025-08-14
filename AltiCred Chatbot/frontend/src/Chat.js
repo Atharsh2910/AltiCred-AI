@@ -57,7 +57,7 @@ function Chat({ userType, onBack }) {
   return (
     <div className="chat-container">
       <div className="header">
-        <button onClick={onBack}>&lt; Back</button>
+        <button onClick={onBack}>&#x2190;</button>
         <h3>AltiCred Chatbot - {userType}</h3>
       </div>
       <div className="message-list">

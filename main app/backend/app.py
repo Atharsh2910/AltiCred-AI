@@ -21,9 +21,7 @@ app = Flask(__name__)
 print("Loading models... Please wait.")
 # We assume the CSVs are in a location accessible by the scripts.
 # If not, you might need to adjust file paths inside your model classes.
-salaried_scorer = SalariedScorer()
-# self_employed_scorer = SelfEmployedScorer() # <-- Uncomment
-# student_scorer = StudentScorer()             # <-- Uncomment
+salaried_scorer = SalariedScorer(file_path='data/salaried_dataset.csv')
 print("All models loaded successfully!")
 
 
@@ -32,7 +30,7 @@ print("All models loaded successfully!")
 @app.route('/')
 def home():
     """Renders the main user interface page."""
-    return render_template('index.html')
+    return render_template('index2.html')
 
 
 # --- Define a Route for Scoring ---
