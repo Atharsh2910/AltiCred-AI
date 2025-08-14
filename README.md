@@ -1,4 +1,4 @@
-AltiCred AI
+    AltiCred AI
 
 AltiCred AI is a modern solution aimed for underbanked class of population, enabling them to get Financial Inclusivity. By leveraging modern technologies, it aims to provide credit score for all people. Unlike the existing cibil score system, which mostly caters for people with banking history, AltiCred Score includes various other parameters that provides a reliable credit score.
 
