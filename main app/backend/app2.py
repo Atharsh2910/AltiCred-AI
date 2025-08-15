@@ -14,7 +14,7 @@ import warnings
 
 warnings.filterwarnings('ignore')
 
-app = Flask(_name_)
+app = Flask(__name__)
 
 class AdaptabilityScorer:
     def __init__(self, file_path='data/modified_student_data_v2.csv'):        
@@ -105,5 +105,5 @@ def index():
             score = f"Error: {e}"
     return render_template('index.html', score=score)
 
-if _name_ == '_main_':
+if _name_ == '__main__':
     app.run(debug=True)
